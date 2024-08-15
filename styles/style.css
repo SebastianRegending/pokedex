@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Flexo-Demi;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.overflow {
+  overflow-y: hidden;
+}
+
+#content {
+  height: calc(100% - 100px);
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 32px 50px;
+}
+
+#contentwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemoncard-style {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5%;
+  border: 1px groove lightgrey;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 0px;
+}
+
+.bigpokecard-style {
+  width: 460px;
+  height: 640px;
+  flex-direction: column;
+  border-radius: 5%;
+  border: 1px groove lightgrey;
+  box-shadow: inset 0px 0px 16px 2px, 0px 0px 6px 0px;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+  padding: 24px 32px;
+}
+
+#bigpokecardwrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.id-size {
+  font-size: 18px;
+}
+
+.profile-img {
+  height: 200px;
+  margin: 0 0 12px 0;
+  transition: 150ms linear;
+}
+
+.profile-img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.pokemonname {
+  font-size: 24px;
+}
+
+#buttonwrapper {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 24px 0;
+}
+
+#loadmorePokemons {
+  width: 120px;
+  height: 40px;
+  background-color: #ffcc01;
+  border: 2px solid #0365a9;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px black;
+}
+
+#close-img-wrapper {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#close-img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#arrowwrapper {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrows {
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+span {
+  color: white;
+}
+
+#copyright {
+  width: 80px;
+  height: 70px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 4px black;
+}
+
+
+
+@media only screen and (max-width: 530px) {
+  .bigpokecard-style {
+    margin: 0 24px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .bigpokecard-style {
+    padding: 12px 16px;
+    height: 560px;
+  }
+
+  .profile-img {
+    height: 150px;
+  }
+
+  .arrows {
+    height: 40px;
+  }
+}

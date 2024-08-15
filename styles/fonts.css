@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Flexo-Demi;
+  src: url(../assets/fonts/Flexo-Demi.ttf);
+}
+
+@font-face {
+  font-family: Flexo-Thin;
+  src: url(../assets/fonts/Flexo-Thin.ttf);
+}
+
+@font-face {
+  font-family: Flexo-Medium;
+  src: url(../assets/fonts/Flexo-Medium.ttf);
+}
+
+@font-face {
+  font-family: Flexo-Bold;
+  src: url(../assets/fonts/Flexo-Bold.ttf);
+}
+
+@font-face {
+  font-family: Flexo-Regular;
+  src: url(../assets/fonts/Flexo-Regular.ttf);
+}
